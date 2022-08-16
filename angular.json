@@ -103,6 +103,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "gestorContras:build:production",
+            "firebaseProject": "password-manager-dani",
+            "firebaseHostingSite": "password-manager-dani"
+          }
         }
       }
     }

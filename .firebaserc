@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "password-manager-dani": {
+      "hosting": {
+        "gestorContras": [
+          "password-manager-dani"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "password-manager-dani"
+  }
+}
