@@ -11,6 +11,7 @@ const redirectLoggedInToItems = () => redirectLoggedInTo(['']);
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent, canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectLoggedInToItems }},
+  { path: 'register', component: LoginComponent, canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectLoggedInToItems }},
   {path: '', component: HomeComponent, canActivate: [AngularFireAuthGuard], data: { authGuardPipe: redirectUnauthorizedToLogin }},
   {path: '**', redirectTo: '', pathMatch: 'full'}
 ];
