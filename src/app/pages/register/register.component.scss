@@ -3,6 +3,19 @@
   justify-content: center;
   flex-direction: column;
   flex-wrap: wrap;
-  margin: 7em 15em 1em 15em;
+  margin: 4em 2em 1em 2em;
+
+
   /* background-image: url('src/assets/img/wallpaperbetter.com_1920x1080.jpg'); */
  }
+
+
+ @media (min-width: 1023px) {
+
+  .login-bg {
+    margin: 9em 15em 1em 15em;
+  }
+
+ }
+
+
