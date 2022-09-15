@@ -1,15 +1,17 @@
 
-<!-- Just an image -->
 <nav class="navbar navbar-light bg-light">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img
         src="src/assets/img/logo.jpg"
+        class="me-2"
         height="20"
-        alt="True Password"
+        alt=""
         loading="lazy"
       />
+      <small>TruePassword</small>
     </a>
+    <i class="fas fa-plus"></i>
   </div>
 </nav>
 
@@ -53,21 +55,11 @@
     <form>
       <div class="text-center mb-3">
         <p>Sign in with:</p>
-        <button type="button" class="btn btn-primary btn-floating mx-1">
-          <i class="fab fa-facebook-f" ></i>
-        </button>
 
-        <button type="button" class="btn btn-primary btn-floating mx-1">
+        <button type="button" class="btn btn-primary btn-floating mx-1" (click)="login()">
           <i class="fab fa-google"></i>
         </button>
 
-        <button type="button" class="btn btn-primary btn-floating mx-1">
-          <i class="fab fa-twitter"></i>
-        </button>
-
-        <button type="button" class="btn btn-primary btn-floating mx-1">
-          <i class="fab fa-github"></i>
-        </button>
       </div>
 
       <p class="text-center">or:</p>

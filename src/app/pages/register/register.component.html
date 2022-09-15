@@ -1,15 +1,18 @@
 
 <!-- Just an image -->
 <nav class="navbar navbar-light bg-light">
-  <div class="container">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img
         src="src/assets/img/logo.jpg"
+        class="me-2"
         height="20"
-        alt="True Password"
+        alt=""
         loading="lazy"
       />
+      <small>TruePassword</small>
     </a>
+    <i class="fas fa-plus"></i>
   </div>
 </nav>
 
@@ -50,52 +53,18 @@
   <div class="tab-content">
     <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="tab-login"   [routerLinkActive]="'active'"
       [routerLink]="'/register'">
-    <!--   <form>
-        <div class="text-center mb-3">
-          <p>Sign in with:</p>
-          <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-facebook-f"></i>
-          </button>
 
-          <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-google"></i>
-          </button>
-
-          <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-twitter"></i>
-          </button>
-
-          <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-github"></i>
-          </button>
-        </div>
-
-        <p class="text-center">or:</p>
-
-
-
-      </form> -->
     </div>
     <div class="tab-pane fade show active" id="pills-register" role="tabpanel" aria-labelledby="tab-register"    [routerLinkActive]="'active'"
     [routerLink]="'/register'">
       <form>
         <div class="text-center mb-3">
           <p>Sign up with:</p>
-          <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-facebook-f"></i>
-          </button>
 
-          <button type="button" class="btn btn-primary btn-floating mx-1">
+          <button type="button" class="btn btn-primary btn-floating mx-1" (click)="login()">
             <i class="fab fa-google"></i>
           </button>
 
-          <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-twitter"></i>
-          </button>
-
-          <button type="button" class="btn btn-primary btn-floating mx-1">
-            <i class="fab fa-github"></i>
-          </button>
         </div>
 
         <p class="text-center">or:</p>
