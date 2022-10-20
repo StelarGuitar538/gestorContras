@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFirestore, AngularFirestoreDocument } from '@angular/fire/compat/firestore';
 import { Observable } from 'rxjs';
+import { DataServiceService } from 'src/app/services/data-service.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,10 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent  {
 
-  constructor() {}
+  constructor(
+    public dataService: DataServiceService
+  ) {}
+
 
 
 

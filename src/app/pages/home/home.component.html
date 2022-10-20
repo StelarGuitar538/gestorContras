@@ -11,9 +11,21 @@
       />
       <small>TruePassword</small>
     </a>
-    <button class="fas fa-plus" id="plusButton" click="(AddDocument)"  {{ (item | async)?.name }}></button>
   </div>
 </nav>
+
+<div class="form-outline">
+  <input type="email" id="typeEmail" class="form-control"  #email class="inputs" placeholder="email"/>
+  <label class="form-label" for="typeEmail"></label>
+</div>
+
+<div class="form-outline">
+  <input type="password" id="typePassword" class="form-control" #password class="inputs" placeholder="password" />
+  <label class="form-label" for="typePassword"></label>
+</div>
+
+
+<button type="button" class="btn btn-outline-primary btn-rounded" data-mdb-ripple-color="dark" id="plusButton" (click)="dataService.addDocument(email.value, password.value)">ADD</button>
 
 <div class="card-text-center">
   <div class="card-header">Featured</div>

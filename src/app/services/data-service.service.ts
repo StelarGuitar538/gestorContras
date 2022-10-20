@@ -12,7 +12,7 @@ export class DataServiceService{
 
 
 async addDocument(email: string, password: string) {
-  const userId = '';
+  const userId = 'test-id';
   const collection = this.afs.collection(`users/${userId}/passwords`);
 
   const data = {
